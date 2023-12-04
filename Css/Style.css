@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 /*HEADER*/
 
@@ -33,7 +38,8 @@ header{
 
 
 /*Buscador*/
-.navbar{
+
+.navbar{    
     display: flex;
     border: none;
 }
@@ -43,8 +49,7 @@ header{
     width: 400px;
     height: 30px;
     border-radius: 5px;
-    background-color: #dcdcdc;
-    color: white;
+    background-color: rgb(90, 90, 90);
     border: 2px solid rgb(175, 175, 175);
 
 }
@@ -56,7 +61,7 @@ header{
     border-radius: 5px;
     border: none;
     color: white;
-    background-color: #ED6F1A;
+    background-color:  rgb(235, 200, 94);
 }
 
 
@@ -107,14 +112,15 @@ nav ul li{
 /*Body*/
 
 body{
-    background-color:rgb(255, 255, 255);    
+    background-color:rgb(242, 242, 242);    
 }
 
 h1{    
-    background-color: #FF6F00;
+    background-color: rgb(235, 200, 94);
     font-family: 'Poppins', sans-serif;
     font-size: xx-large;
-    font-weight: 600;   
+    font-weight:lighter;
+    font-kerning: none;
     color: rgb(255, 255, 255);    
     display: flex;
     justify-content: center;
@@ -236,6 +242,8 @@ h2{
 /*Footer*/
 
 footer{
+    display: flex;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
