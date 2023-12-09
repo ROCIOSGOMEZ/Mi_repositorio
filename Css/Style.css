@@ -159,9 +159,14 @@ h2{
 /*DESTACADOS*/
 
 
-.destacados h2{
+.Destacados{
+    border-color: 1px solid black;
     background-color: #272727;
-    padding-top: 20px;
+}
+
+.Destacados h2{
+    color: #DCDCDC;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -181,7 +186,6 @@ h2{
 
 
 .grid-item{
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
     
@@ -201,7 +205,7 @@ h2{
 }
 
 .Info-producto{
-    padding: 5px 10px;    
+    padding: 10px 10px;    
     display: flex;
     flex-direction: column;
     gap: 5px;   
@@ -231,22 +235,42 @@ h2{
 
 
 /*LOS MAS VENDIDOS*/
+
+.grid-containerl{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 410px);
+    row-gap: 35px;
+    column-gap: 45px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;  
+    padding-bottom: 300px;  
+} 
+
+.losmasvendidos{
+    background-color: #EBEBEB;
+}
+
+
 .losmasvendidos .grid-container{    
     grid-template-columns: repeat(6, 1fr);    
-}  
+} 
 
-
-
-
+.losmasvendidos h2{
+    color: #272727;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 
 /*Footer*/
 
 footer{
+    background-color: #EBEBEB;
     display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
 }
 
 footer h3{
