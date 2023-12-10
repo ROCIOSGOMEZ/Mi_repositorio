@@ -1,0 +1,7 @@
+@mixin fuente-links($size, $family, $weight, $color, $style){
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+    color: $color;
+    font-style: $style;
+}

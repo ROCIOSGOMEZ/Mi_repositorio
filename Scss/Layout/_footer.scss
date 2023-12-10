@@ -1,0 +1,57 @@
+@import '../Utilities/mixin';
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+        ul{
+            padding: 15px 40px 15px 0px;
+            margin: 5px 100px 5px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                #direccion{
+                    li{
+                        img{
+                            width: 100px;
+                            height: 35px;
+                        }
+                        p{
+                            width: 200px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+                #suscripcion{
+                    ul{
+                        li{
+                            width: 200px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+                #redes{
+                    width: 200px;
+                    margin-bottom: 5px;
+                    display: flex;
+                    justify-content: center;
+                    text-decoration: none;
+                    #socialmedia{
+                        margin-bottom: 5px;
+                        display: inline;
+                        align-self: center;
+                            li{
+                                .redes{
+                                    text-decoration: none;
+                                    @include fuente-links(small, 'Poppins', bold , #272727, normal)
+                                }
+                            }
+                            
+                    }
+                }          
+            
+        }
+}

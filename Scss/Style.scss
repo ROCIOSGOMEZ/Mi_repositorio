@@ -1,5 +1,19 @@
 //Base
 @import './Base/reset';
+@import './Base/fonts';
 
 //Layout
 @import './Layout/header';
+
+@import './Layout/Inicio';
+
+@import './Layout/footer';
+
+@import './Layout/Nosotros';
+
+//Components
+@import './Components/Buttons.scss';
+
+//Utilities
+@import './Utilities/mixin';
+

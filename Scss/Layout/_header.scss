@@ -1,3 +1,5 @@
+@import '../Utilities/mixin';
+
 header{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -7,6 +9,7 @@ header{
             padding: 5px 50px 5px 50px;
             align-items: center;
             justify-content: space-between;
+            //INICIO
                 #Inicio{
                     display: flex;
                     justify-content: center;
@@ -17,35 +20,36 @@ header{
                             height: 35px;
                         }
                 }
+                //BUSCADOR
                 .Buscador{
                     .navbar{
                         display: flex;
                         border: none;
-                            .form-control{
-                                font-size: small;
-                                width: 400px;
-                                height: 30px;
-                                border-radius: 5px;
-                                background-color: rgb(186, 186, 186);
-                                border: 2px solid rgb(175, 175, 175);
-                            }
-                            .btn{
-                                font-size: small;
-                                width: 60px;
-                                height: 30px;
-                                border-radius: 5px;
-                                border: none;
-                                color: white;
-                                background-color:  rgb(235, 200, 94);
+                        padding: 0px;
+                        margin: 0px;
+                            .container-fluid{
+                                margin: 0px;
+                                padding: 0px;
+                                .d-flex{
+                                    padding: 0px;
+                                    .form-control{
+                                        font-size: small;
+                                        width: 400px;
+                                        height: 30px;
+                                        border-radius: 5px;
+                                        background-color: rgb(203, 203, 203);                                        
+                                               
+                                    }
+                                }
                             }
                     }
                 }    
-                
+                //CARRITO
                 #Carrito{                       
                     padding: 10px;
                     margin: 50px;
                         img{
-                            width: 30px;
+                            width: 40px;
                             max-height: 100%;
                         }
                 }                                       
@@ -60,7 +64,11 @@ header{
                     li{
                         width: 100px;
                         margin: 40px 40px 40px 40px;
-                        display: inline; 
+                        display: inline;
+                            a{
+                                text-decoration: none;
+                                @include fuente-links(large, 'Poppins', normal, #272727, normal)                                
+                            } 
                     }
                 }
         }

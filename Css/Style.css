@@ -13,17 +13,46 @@ ul {
 
 /*LINKS*/
 a {
-  font-family: "Poppins", sans-serif;
-  font-size: large;
-  font-style: bold;
-  font-weight: normal;
-  color: rgb(40, 40, 40);
   text-decoration: none;
 }
 
 /*BODY*/
 body {
   background-color: rgb(242, 242, 242);
+}
+
+h1 {
+  background-color: #272727;
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  font-weight: lighter;
+  font-kerning: none;
+  color: rgb(235, 200, 94);
+  display: flex;
+  justify-content: center;
+  padding: 50px 40px 50px 40px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-family: "Libre Bodoni", serif;
+  font-size: xx-large;
+  font-weight: 100;
+  font-kerning: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: 600;
+  text-align: center;
 }
 
 header {
@@ -37,6 +66,12 @@ header #container {
   align-items: center;
   justify-content: space-between;
 }
+header #container #Inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 header #container #Inicio img {
   width: 100px;
   height: 35px;
@@ -44,31 +79,30 @@ header #container #Inicio img {
 header #container .Buscador .navbar {
   display: flex;
   border: none;
+  padding: 0px;
+  margin: 0px;
 }
-header #container .Buscador .navbar .form-control {
+header #container .Buscador .navbar .container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+header #container .Buscador .navbar .container-fluid .d-flex {
+  padding: 0px;
+}
+header #container .Buscador .navbar .container-fluid .d-flex .form-control {
   font-size: small;
   width: 400px;
   height: 30px;
   border-radius: 5px;
-  background-color: rgb(186, 186, 186);
-  border: 2px solid rgb(175, 175, 175);
-}
-header #container .Buscador .navbar .btn {
-  font-size: small;
-  width: 60px;
-  height: 30px;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  background-color: rgb(235, 200, 94);
+  background-color: rgb(203, 203, 203);
 }
 header #container #Carrito {
   padding: 10px;
   margin: 50px;
 }
 header #container #Carrito img {
-  width: 5px;
-  height: 4px;
+  width: 40px;
+  max-height: 100%;
 }
 header nav {
   display: flex;
@@ -81,6 +115,137 @@ header nav ul li {
   width: 100px;
   margin: 40px 40px 40px 40px;
   display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: large;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #272727;
+  font-style: normal;
+}
+
+/*LANZAMIENTOS*/
+.Lanzamientos .d-block {
+  height: auto;
+}
+
+/*DESTACADOS*/
+.destacados .grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 410px);
+  row-gap: 35px;
+  column-gap: 45px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.destacados .grid-container .grid-item {
+  justify-content: center;
+  align-items: center;
+}
+.destacados .grid-container .grid-item img {
+  width: auto;
+  height: 280px;
+  object-fit: cover;
+  padding-left: 25px;
+}
+.destacados .grid-container .grid-item img:hover {
+  transform: scale(1.8);
+}
+.destacados .info-producto {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.destacados .info-producto .comprar {
+  background-color: black;
+  border-radius: 5px;
+  font-size: medium;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
+}
+
+/*LOS MAS VENDIDOS*/
+.losmasvendidos .grid-container {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+footer ul {
+  padding: 15px 40px 15px 0px;
+  margin: 5px 100px 5px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul #direccion li img {
+  width: 100px;
+  height: 35px;
+}
+footer ul #direccion li p {
+  width: 200px;
+  margin-bottom: 5px;
+}
+footer ul #suscripcion ul li {
+  width: 200px;
+  margin-bottom: 5px;
+}
+footer ul #redes {
+  width: 200px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+footer ul #redes #socialmedia {
+  margin-bottom: 5px;
+  display: inline;
+  align-self: center;
+}
+footer ul #redes #socialmedia li .redes {
+  text-decoration: none;
+  font-size: small;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #272727;
+  font-style: normal;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  font-family: "Poppins";
+  font-weight: 100;
+  color: #272727;
+  font-style: normal;
+  margin: 20px 120px 20px 120px;
+  text-align: justify;
+}
+
+.btn {
+  font-size: small;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(235, 200, 94);
 }
 
 /*# sourceMappingURL=Style.css.map */
