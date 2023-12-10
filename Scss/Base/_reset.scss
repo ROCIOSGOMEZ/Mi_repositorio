@@ -1,0 +1,27 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*LINKS*/
+
+a{
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-style: bold;
+    font-weight: normal;
+    color: rgb(40, 40, 40);
+    text-decoration: none;   
+}
+
+/*BODY*/
+body{
+    background-color:rgb(242, 242, 242);    
+}
