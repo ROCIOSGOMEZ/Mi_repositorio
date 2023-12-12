@@ -1,0 +1,21 @@
+.Autores {
+    justify-content: center;
+    align-items: center;
+    
+    ul {
+        list-style: none;
+        padding: 0; 
+        
+        .animate_animated {
+            li {
+                img {
+                    width: auto; 
+                    height: auto;
+                    max-width: 100%; 
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,9 @@
 @import '../Utilities/mixin';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header{
     padding-top: 20px;

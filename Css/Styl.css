@@ -232,6 +232,8 @@ footer ul #Redes #socialmedia li .Redes {
 
 .Nosotros {
   padding-top: 120px;
+  background-color: rgb(39, 39, 39);
+  background: linear-gradient(180deg, rgb(39, 39, 39) 0%, rgb(99, 99, 99) 67%, rgb(241, 241, 241) 100%);
 }
 
 p {
@@ -298,4 +300,4 @@ p {
   text-align: center;
 }
 
-/*# sourceMappingURL=Style.css.map */
+/*# sourceMappingURL=Styl.css.map */

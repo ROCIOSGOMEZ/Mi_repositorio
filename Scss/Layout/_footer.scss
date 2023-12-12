@@ -1,4 +1,9 @@
 @import '../Utilities/mixin';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /*Footer*/
 
 footer{
@@ -8,33 +13,41 @@ footer{
     border-bottom: 1px solid black;
     border-top: 1px solid black;
         ul{
-            padding: 15px 40px 15px 0px;
+            padding: 10px 40px 10px 0px;
             margin: 5px 100px 5px 100px;
             display: flex;
             justify-content: center;
             align-items: center;
                 #direccion{
-                    li{
-                        img{
-                            width: 100px;
-                            height: 35px;
-                        }
-                        p{
-                            width: 200px;
-                            margin-bottom: 5px;
-                        }
+                    width: 1fr;
+                    ul{
+                        display: inline;
+                        margin: 5px;
+                        li{                        
+                            img{
+                                width: 100px;
+                                height: 35px;
+                                margin: 5px;
+                            }
+                            p{
+                                width: 200px;
+                                margin: 2px 5px 2px 5px;
+                            }
+                        } 
                     }
+                    
                 }
                 #suscripcion{
+                    width: 1fr;
                     ul{
                         li{
                             width: 200px;
-                            margin-bottom: 5px;
+                            margin-bottom: 5px
                         }
                     }
                 }
-                #redes{
-                    width: 200px;
+                #Redes{
+                    width:1fr;
                     margin-bottom: 5px;
                     display: flex;
                     justify-content: center;
@@ -44,7 +57,7 @@ footer{
                         display: inline;
                         align-self: center;
                             li{
-                                .redes{
+                                .Redes{
                                     text-decoration: none;
                                     @include fuente-links(small, 'Poppins', bold , #272727, normal)
                                 }

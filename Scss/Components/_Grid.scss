@@ -1,0 +1,42 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 410px);
+    row-gap: 35px;
+    column-gap: 45px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .grid-item {
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: auto;
+            height: 280px;
+            object-fit: cover;
+            padding-left: 25px;
+
+            &:hover {
+                transform: scale(1.8);
+            }
+        }
+    }
+
+    .Info-producto {
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .Comprar {
+            background-color: black;
+            border-radius: 5px;
+            @include fuente-links(medium, 'Poppins', bold, white, normal);
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}

@@ -1,5 +1,16 @@
 @import '../Utilities/mixin';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Nosotros {
+    
+    padding-top: 120px;
+    
+}
 
 p{
     display: flex;
@@ -7,5 +18,6 @@ p{
     @include fuente-links(medium, 'Poppins', 100, #272727, normal);
     margin: 20px 120px 20px 120px;
     text-align: justify;
+
     
 }
