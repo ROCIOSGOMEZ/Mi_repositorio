@@ -43,7 +43,7 @@
             <li>
                 <!--Carrito-->
                 <a href="#" id="Carrito">
-                    <img src="Assets/Carrito.png" alt="Carrito">
+                    <img src="../Assets/Carrito.png" alt="Carrito">
                 </a>
             </li>
             
@@ -78,34 +78,37 @@
 
 
     </header>
-   
 
-        
-    
     <main>
+        
+           
+        <h1>CONTACTO</h1>
     
-        <h2>Contacto</h2>
+        <form class="Contacto">
 
-            <div class="Formulario">            
+            <div class="Formulario">
+    
+                <div class="Input-group">
 
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Nombre" id="floatingTextareaDisabled" disabled></textarea>
-                    <label for="floatingTextareaDisabled">Nombre</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInputDisabled" placeholder="nombre@ejemplo.com" disabled>
-                    <label for="floatingInputDisabled">Email</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Deje un comentario" id="floatingTextarea2Disabled" style="height: 100px" disabled>Comentarios</textarea>
-                    <label for="floatingTextarea2Disabled">Comentario</label>
-                </div>
-             
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+
+                    <label for="coment">Comentario</label>
+                    <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Comentario"></textarea>
+
+                    <button class="btn2" type="submit">Enviar</button>            
     
-            </div>
+                </div>
+        
+            </div>    
     
     
-    </main>
+        </form>
+
+    </main>     
     
     <footer>
         <ul>

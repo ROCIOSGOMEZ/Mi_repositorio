@@ -1,0 +1,83 @@
+@import '../Utilities/mixin';
+@import '../Components/Botones';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+        #container{
+            display: flex;
+            margin: 10px;
+            padding: 5px 50px 5px 50px;
+            align-items: center;
+            justify-content: space-between;
+            //INICIO
+                #Inicio{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+                        img{
+                            width: 100px;
+                            height: 35px;
+                            margin-left: 50px;
+                        }
+                }
+                //BUSCADOR
+                .Buscador{
+                    .navbar{
+                        display: flex;
+                        border: none;
+                        padding: 0px;
+                        margin: 0px;
+                            .container-fluid{
+                                margin: 0px;
+                                padding: 0px;
+                                .d-flex{
+                                    padding: 0px;
+                                    .form-control{
+                                        font-size: medium;
+                                        width: 400px;
+                                        height: 35px;
+                                        border-radius: 5px;
+                                        background-color: rgb(203, 203, 203);                                            
+                                    }
+                                }
+                            }
+                    }
+                }    
+                //CARRITO
+                #Carrito{                       
+                    padding: 10px;
+                    margin: 50px;
+                        img{
+                            width: 40px;
+                            max-height: 100%;
+                        }
+                }                                       
+        }
+        nav{
+            display: flex;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 30px 200px 30px 350px;
+            margin-bottom: 0px;
+                ul{
+                    li{
+                        width: 100px;
+                        margin: 40px 40px 40px 40px;
+                        display: inline;
+                            a{
+                                text-decoration: none;
+                                @include fuente-links(large, 'Poppins', normal, #272727, normal)                                
+                            } 
+                    }
+                }
+        }
+        
+
+}

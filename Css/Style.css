@@ -21,21 +21,36 @@ body {
   background-color: rgb(242, 242, 242);
 }
 
+/*CONTACTO*/
+label {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  font-weight: 600;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: 100;
+}
+
 h1 {
-  background-color: #272727;
+  background-color: rgb(235, 200, 94);
   font-family: "Poppins", sans-serif;
   font-size: xx-large;
-  font-weight: lighter;
+  font-weight: bold;
   font-kerning: none;
-  color: rgb(235, 200, 94);
+  color: #272727;
   display: flex;
   justify-content: center;
   padding: 50px 40px 50px 40px;
-  margin-bottom: 20px;
-  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 h2 {
+  background-color: #272727;
+  color: rgb(235, 200, 94);
   font-family: "Libre Bodoni", serif;
   font-size: xx-large;
   font-weight: 100;
@@ -43,8 +58,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  padding: 50px 40px 50px 40px;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 h3 {
@@ -53,6 +69,37 @@ h3 {
   font-size: medium;
   font-weight: 600;
   text-align: center;
+}
+
+.btn {
+  font-size: small;
+  font-weight: 600;
+  width: 70px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(235, 200, 94);
+}
+.btn:hover {
+  background-color: #272727;
+  color: rgb(235, 200, 94);
+}
+
+.btn2 {
+  font-size: medium;
+  background-color: rgb(235, 200, 94);
+  border: 0px;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  width: 250px;
+  margin-left: 15px;
+}
+.btn2:hover {
+  background-color: #272727;
+  color: rgb(235, 200, 94);
 }
 
 * {
@@ -81,6 +128,7 @@ header #container #Inicio {
 header #container #Inicio img {
   width: 100px;
   height: 35px;
+  margin-left: 50px;
 }
 header #container .Buscador .navbar {
   display: flex;
@@ -96,9 +144,9 @@ header #container .Buscador .navbar .container-fluid .d-flex {
   padding: 0px;
 }
 header #container .Buscador .navbar .container-fluid .d-flex .form-control {
-  font-size: small;
+  font-size: medium;
   width: 400px;
-  height: 30px;
+  height: 35px;
   border-radius: 5px;
   background-color: rgb(203, 203, 203);
 }
@@ -114,7 +162,7 @@ header nav {
   display: flex;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  padding: 30px 200px 10px 350px;
+  padding: 30px 200px 30px 350px;
   margin-bottom: 0px;
 }
 header nav ul li {
@@ -152,6 +200,19 @@ a {
 /*BODY*/
 body {
   background-color: rgb(242, 242, 242);
+}
+
+/*CONTACTO*/
+label {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  font-weight: 600;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: 100;
 }
 
 /*LANZAMIENTOS*/
@@ -246,14 +307,151 @@ p {
   text-align: justify;
 }
 
+p {
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+iframe {
+  justify-content: center;
+  align-items: center;
+  margin-left: 550px;
+}
+
 .btn {
   font-size: small;
-  width: 60px;
-  height: 30px;
+  font-weight: 600;
+  width: 70px;
+  height: 35px;
   border-radius: 5px;
   border: none;
   color: white;
   background-color: rgb(235, 200, 94);
+}
+.btn:hover {
+  background-color: #272727;
+  color: rgb(235, 200, 94);
+}
+
+.btn2 {
+  font-size: medium;
+  background-color: rgb(235, 200, 94);
+  border: 0px;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  width: 250px;
+  margin-left: 15px;
+}
+.btn2:hover {
+  background-color: #272727;
+  color: rgb(235, 200, 94);
+}
+
+.Contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.Contacto .Formulario {
+  padding-top: 50px 55px;
+  box-shadow: 0 0 15px rgb(73, 73, 73);
+  border-radius: 20px;
+  text-align: center;
+  width: 1000px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.Contacto .Formulario .Input-group {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.Contacto .Formulario .Input-group label {
+  color: #272727;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  padding-left: 20px;
+}
+.Contacto .Formulario .Input-group input, .Contacto .Formulario .Input-group textarea {
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+  border: 0px;
+  padding: 10px;
+  width: 500px;
+}
+
+.Autores {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Autores .Bio1 {
+  display: inline;
+}
+.Autores .Bio1 img {
+  max-width: 300px;
+  height: auto;
+  margin: 50px;
+}
+.Autores .Bio1 .p1 {
+  background-color: #272727;
+  color: white;
+  padding: 0px 15px 0px 15px;
+  width: 700px;
+  height: 300px;
+}
+.Autores .Bio2 img {
+  max-width: 300px;
+  height: auto;
+  margin: 50px;
+}
+.Autores .Bio2 .p2 {
+  background-color: white;
+  color: #272727;
+  padding: 0px 15px 0px 15px;
+  width: 700px;
+  height: 300px;
+}
+
+.btn {
+  font-size: small;
+  font-weight: 600;
+  width: 70px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(235, 200, 94);
+}
+.btn:hover {
+  background-color: #272727;
+  color: rgb(235, 200, 94);
+}
+
+.btn2 {
+  font-size: medium;
+  background-color: rgb(235, 200, 94);
+  border: 0px;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  width: 250px;
+  margin-left: 15px;
+}
+.btn2:hover {
+  background-color: #272727;
+  color: rgb(235, 200, 94);
 }
 
 .grid-container {
@@ -287,6 +485,132 @@ p {
   gap: 5px;
 }
 .grid-container .Info-producto .Comprar {
+  background-color: black;
+  border-radius: 5px;
+  font-size: medium;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 410px);
+  row-gap: 35px;
+  column-gap: 45px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.grid-container2 .grid-item {
+  justify-content: center;
+  align-items: center;
+}
+.grid-container2 .grid-item img {
+  width: auto;
+  height: 280px;
+  object-fit: cover;
+  padding-left: 25px;
+}
+.grid-container2 .grid-item img:hover {
+  transform: scale(1.8);
+}
+.grid-container2 .Info-producto {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.grid-container2 .Info-producto .Comprar {
+  background-color: black;
+  border-radius: 5px;
+  font-size: medium;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: repeat(1, 410px);
+  row-gap: 35px;
+  column-gap: 45px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.grid-container3 .grid-item {
+  justify-content: center;
+  align-items: center;
+}
+.grid-container3 .grid-item img {
+  width: auto;
+  height: 280px;
+  object-fit: cover;
+  padding-left: 25px;
+}
+.grid-container3 .grid-item img:hover {
+  transform: scale(1.8);
+}
+.grid-container3 .Info-producto {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.grid-container3 .Info-producto .Comprar {
+  background-color: black;
+  border-radius: 5px;
+  font-size: medium;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(1, 410px);
+  row-gap: 35px;
+  column-gap: 45px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.grid-container4 .grid-item {
+  justify-content: center;
+  align-items: center;
+}
+.grid-container4 .grid-item img {
+  width: auto;
+  height: 280px;
+  object-fit: cover;
+  padding-left: 25px;
+}
+.grid-container4 .grid-item img:hover {
+  transform: scale(1.8);
+}
+.grid-container4 .Info-producto {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.grid-container4 .Info-producto .Comprar {
   background-color: black;
   border-radius: 5px;
   font-size: medium;
