@@ -1,11 +1,24 @@
-p{
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
-}
 
-iframe{
+.dondeestamos{
     justify-content: center;
     align-items: center;
-    margin-left:550px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    
+    p{
+        align-items: center;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        width: 400px;
+        margin-bottom: 20px;
+        
+    }
+    
+    iframe{
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
 }

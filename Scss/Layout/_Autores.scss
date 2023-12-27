@@ -1,40 +1,6 @@
-.Autores{
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  .Bio1{
-    display: inline;
-    img{
-      max-width: 300px; 
-      height: auto;      
-      margin: 50px;
-    }
-    .p1{
-      background-color: #272727;
-      color: white;
-      padding: 0px 15px 0px 15px;
-      width: 700px;
-      height: 300px;
-    }      
-  }
-
-  .Bio2{
-    
-    img{
-      max-width: 300px; 
-      height: auto;      
-      margin: 50px;
-    }
-    .p2{
-      background-color: white;
-      color: #272727;
-      padding: 0px 15px 0px 15px;
-      width: 700px;
-      height: 300px;
-    }
-  }
+.animate__animated.animate__fadeInLeftBig {
+  --animate-duration: 5s;
 }
-  
-
-
+.animate__animated.animate__fadeInRightBig {
+  --animate-duration: 8s;
+}
