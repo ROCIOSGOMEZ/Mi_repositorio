@@ -39,6 +39,12 @@ header{
                 }
                 //BUSCADOR
                 .Buscador{
+                    display: flex;
+                    justify-content: center;
+                    @include mobile{
+                        display:inline;                        
+                        width: 100px;   
+                    } 
                     .navbar{
                         display: flex;
                         border: none;
@@ -61,7 +67,7 @@ header{
                                         }
                                         @include mobile{
                                             font-size: xx-small;
-                                            width: 300px;   
+                                            width: 200px;   
                                         }                                           
                                     }
                                 }

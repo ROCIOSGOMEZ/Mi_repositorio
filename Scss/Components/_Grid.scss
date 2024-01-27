@@ -5,7 +5,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 100fr);
+    grid-template-rows: repeat(2, 410px);
     row-gap: 35px;
     column-gap: 45px;
     justify-content: center;
@@ -20,9 +20,9 @@
     }
     @include mobile{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 410px);
-        row-gap: 10px;
-        column-gap: 20px       
+        grid-template-rows: repeat(6, 200px);
+        row-gap: 30px;
+        column-gap: 10px       
     }
     .grid-item {
         justify-content: center;
@@ -34,7 +34,7 @@
             object-fit: cover;
             padding-left: 25px;
             @include mobile{
-                height: 200px;
+                height: 120px;
             }
             
             
@@ -51,6 +51,9 @@
         flex-direction: column;
         gap: 5px;
         width: 200px;
+        @include mobile{
+            padding: 10px 5px;
+        }
         
 
         .Comprar {
@@ -61,7 +64,8 @@
             padding: 10px;
             text-align: center;
             @include mobile{
-                  @include fuente-links(x-small, 'Poppins', bold, white, normal);   
+                @include fuente-links(x-small, 'Poppins', bold, white, normal); 
+                width: 150px;  
             }
             @include tablet{
                 @include fuente-links(x-small, 'Poppins', bold, white, normal);   
