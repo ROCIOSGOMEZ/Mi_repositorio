@@ -72,7 +72,7 @@ h3 {
   font-weight: 600;
   text-align: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   h3 {
     font-size: x-small;
     font-weight: 300;
@@ -113,7 +113,7 @@ h3 {
   width: 250px;
   margin-left: 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .btn2 {
     width: 100px;
   }
@@ -197,7 +197,7 @@ h3 {
   font-weight: 600;
   text-align: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   h3 {
     font-size: x-small;
     font-weight: 300;
@@ -231,7 +231,7 @@ header #container {
     justify-content: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header #container {
     display: inline;
     justify-content: center;
@@ -252,7 +252,7 @@ header #container .Buscador {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header #container .Buscador {
     display: inline;
     width: 100px;
@@ -284,7 +284,7 @@ header #container .Buscador .navbar .container-fluid .d-flex .form-control {
     width: 300px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header #container .Buscador .navbar .container-fluid .d-flex .form-control {
     font-size: xx-small;
     width: 200px;
@@ -317,7 +317,7 @@ header nav ul li {
     justify-content: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header nav ul li {
     justify-content: center;
   }
@@ -339,7 +339,7 @@ header nav ul li a {
     font-style: normal;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header nav ul li a {
     font-size: xx-small;
     font-family: "Poppins";
@@ -418,7 +418,7 @@ footer ul {
     display: inline;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   footer ul {
     display: inline;
   }
@@ -429,7 +429,7 @@ footer ul #direccion {
   justify-content: center;
   display: inline-flex;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   footer ul #direccion {
     padding-left: 200px;
   }
@@ -458,7 +458,7 @@ footer ul #direccion ul li p {
   color: #272727;
   font-style: normal;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   footer ul #direccion ul li p {
     font-size: xx-small;
     font-family: "Poppins";
@@ -492,12 +492,12 @@ footer ul #suscripcion ul li .campo {
   color: #272727;
   font-style: normal;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   footer ul #suscripcion ul li .campo {
     width: 100px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   footer ul #suscripcion ul li .campo {
     width: 200px;
   }
@@ -612,7 +612,7 @@ footer ul #Redes #socialmedia li .Redes {
   width: 250px;
   margin-left: 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .btn2 {
     width: 100px;
   }
@@ -702,7 +702,7 @@ footer ul #Redes #socialmedia li .Redes {
     width: 350px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .Contacto .Formulario .Input-group input, .Contacto .Formulario .Input-group textarea {
     width: 200px;
   }
@@ -744,7 +744,7 @@ footer ul #Redes #socialmedia li .Redes {
   width: 250px;
   margin-left: 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .btn2 {
     width: 100px;
   }
@@ -811,7 +811,7 @@ footer ul #Redes #socialmedia li .Redes {
     column-gap: 35px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 200px);
@@ -829,7 +829,7 @@ footer ul #Redes #socialmedia li .Redes {
   object-fit: cover;
   padding-left: 25px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container .grid-item img {
     height: 120px;
   }
@@ -844,7 +844,7 @@ footer ul #Redes #socialmedia li .Redes {
   gap: 5px;
   width: 200px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container .Info-producto {
     padding: 10px 5px;
   }
@@ -861,7 +861,7 @@ footer ul #Redes #socialmedia li .Redes {
   padding: 10px;
   text-align: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container .Info-producto .Comprar {
     font-size: x-small;
     font-family: "Poppins";
@@ -901,7 +901,7 @@ footer ul #Redes #socialmedia li .Redes {
     column-gap: 25px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 410px);
@@ -950,7 +950,7 @@ footer ul #Redes #socialmedia li .Redes {
     font-style: normal;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container2 .Info-producto .Comprar {
     font-size: x-small;
     font-family: "Poppins";
@@ -979,7 +979,7 @@ footer ul #Redes #socialmedia li .Redes {
     column-gap: 25px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container3 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 410px);
@@ -1028,7 +1028,7 @@ footer ul #Redes #socialmedia li .Redes {
     font-style: normal;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container3 .Info-producto .Comprar {
     font-size: x-small;
     font-family: "Poppins";
@@ -1057,7 +1057,7 @@ footer ul #Redes #socialmedia li .Redes {
     column-gap: 25px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container4 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 410px);
@@ -1106,7 +1106,7 @@ footer ul #Redes #socialmedia li .Redes {
     font-style: normal;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .grid-container4 .Info-producto .Comprar {
     font-size: x-small;
     font-family: "Poppins";
@@ -1147,7 +1147,7 @@ footer ul #Redes #socialmedia li .Redes {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .Autores .grid-container5 .grid-item2 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -1167,7 +1167,7 @@ footer ul #Redes #socialmedia li .Redes {
     height: auto;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .Autores .grid-container5 .grid-item2 .animate__animated {
     width: 80%;
   }
