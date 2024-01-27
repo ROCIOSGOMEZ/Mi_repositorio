@@ -1,5 +1,7 @@
 @import '../Utilities/mixin';
 @import '../Components/Botones';
+@import '../Base/Media';
+@import '../Base/Font';
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +17,14 @@ header{
             padding: 5px 50px 5px 50px;
             align-items: center;
             justify-content: space-between;
+            @include tablet{
+                justify-content: center;   
+            }
+            @include mobile{
+                display: inline;
+                justify-content: center;   
+            }
+            
             //INICIO
                 #Inicio{
                     display: flex;
@@ -32,7 +42,7 @@ header{
                     .navbar{
                         display: flex;
                         border: none;
-                        padding: 0px;
+                        padding: 10px;
                         margin: 0px;
                             .container-fluid{
                                 margin: 0px;
@@ -44,7 +54,15 @@ header{
                                         width: 400px;
                                         height: 35px;
                                         border-radius: 5px;
-                                        background-color: rgb(203, 203, 203);                                            
+                                        background-color: rgb(203, 203, 203); 
+                                        @include tablet{
+                                            font-size: small;
+                                            width: 300px;   
+                                        }
+                                        @include mobile{
+                                            font-size: xx-small;
+                                            width: 300px;   
+                                        }                                           
                                     }
                                 }
                             }
@@ -62,18 +80,33 @@ header{
         }
         nav{
             display: flex;
+            justify-content: center;
             border-top: 1px solid black;
             border-bottom: 1px solid black;
-            padding: 30px 200px 30px 350px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             margin-bottom: 0px;
+            
                 ul{
                     li{
                         width: 100px;
                         margin: 40px 40px 40px 40px;
                         display: inline;
+                        @include tablet{
+                            justify-content: center;   
+                        }
+                        @include mobile{
+                            justify-content: center;   
+                        }
                             a{
                                 text-decoration: none;
-                                @include fuente-links(large, 'Poppins', normal, #272727, normal)                                
+                                @include fuente-links(large, 'Poppins', normal, #272727, normal);
+                                @include tablet{
+                                    @include fuente-links(small, 'Poppins', normal, #272727, normal);   
+                                }
+                                @include mobile{
+                                    @include fuente-links(xx-small, 'Poppins', normal, #272727, normal);   
+                                }                               
                             } 
                     }
                 }

@@ -1,3 +1,5 @@
+@import '../Base/Media';
+
 h1{    
     background-color: rgb(235, 200, 94);
     font-family: 'Libre Bodoni', serif;
@@ -34,5 +36,12 @@ h3{
     font-size:small;
     font-weight: 600;
     text-align:center;
+    @include mobile{
+        font-size:x-small;
+        font-weight: 300;
+    }
+    @include tablet{
+        font-size: small;
+    }
 
 }

@@ -1,16 +1,29 @@
+@import '../Base/Media';
+
 /*Index*/
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 410px);
+    grid-template-rows: repeat(2, 100fr);
     row-gap: 35px;
     column-gap: 45px;
     justify-content: center;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 410px);
+        row-gap: 25px;
+        column-gap: 35px       
+    }
+    @include mobile{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 410px);
+        row-gap: 10px;
+        column-gap: 20px       
+    }
     .grid-item {
         justify-content: center;
         align-items: center;
@@ -20,6 +33,11 @@
             height: 280px;
             object-fit: cover;
             padding-left: 25px;
+            @include mobile{
+                height: 200px;
+            }
+            
+            
 
             &:hover {
                 transform: scale(1.8);
@@ -32,13 +50,22 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        width: 200px;
+        
 
         .Comprar {
+            width: 1fr;
             background-color: black;
             border-radius: 5px;
             @include fuente-links(medium, 'Poppins', bold, white, normal);
             padding: 10px;
             text-align: center;
+            @include mobile{
+                  @include fuente-links(x-small, 'Poppins', bold, white, normal);   
+            }
+            @include tablet{
+                @include fuente-links(x-small, 'Poppins', bold, white, normal);   
+          }
         }
     }
 }
@@ -55,6 +82,18 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 410px);
+        row-gap: 15px;
+        column-gap: 25px       
+    }
+    @include mobile{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 410px);
+        row-gap: 10px;
+        column-gap: 20px       
+    }
 
     .grid-item {
         justify-content: center;
@@ -77,13 +116,21 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        width: 200px;
 
         .Comprar {
+            width: auto;
             background-color: black;
             border-radius: 5px;
             @include fuente-links(medium, 'Poppins', bold, white, normal);
             padding: 10px;
             text-align: center;
+            @include tablet{
+                @include fuente-links(small, 'Poppins', bold, white, normal);
+            }
+            @include mobile{
+                @include fuente-links(x-small, 'Poppins', bold, white, normal);   
+            }
         }
     }
 }  
@@ -99,6 +146,18 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 410px);
+        row-gap: 15px;
+        column-gap: 25px       
+    }
+    @include mobile{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 410px);
+        row-gap: 10px;
+        column-gap: 20px       
+    }
 
     .grid-item {
         justify-content: center;
@@ -121,20 +180,28 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        width: 200px;
 
         .Comprar {
+            width: auto;
             background-color: black;
             border-radius: 5px;
             @include fuente-links(medium, 'Poppins', bold, white, normal);
             padding: 10px;
             text-align: center;
+            @include tablet{
+                @include fuente-links(small, 'Poppins', bold, white, normal);
+            }
+            @include mobile{
+                @include fuente-links(x-small, 'Poppins', bold, white, normal);   
+            }
         }
     }
 }
 
 .grid-container4 {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 410px);
     row-gap: 35px;
     column-gap: 45px;
@@ -142,6 +209,18 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 410px);
+        row-gap: 15px;
+        column-gap: 25px       
+    }
+    @include mobile{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 410px);
+        row-gap: 10px;
+        column-gap: 20px       
+    }
 
     .grid-item {
         justify-content: center;
@@ -164,13 +243,23 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        width: 200px;
+        
 
         .Comprar {
+            width: auto;
             background-color: black;
             border-radius: 5px;
             @include fuente-links(medium, 'Poppins', bold, white, normal);
             padding: 10px;
             text-align: center;
+            @include tablet{
+                @include fuente-links(small, 'Poppins', bold, white, normal);
+            }
+            @include mobile{
+                @include fuente-links(x-small, 'Poppins', bold, white, normal);   
+            }
+           
         }
     }
 }
@@ -200,6 +289,14 @@
             padding: 0%;
             margin-bottom: 20px;
             margin-top: 20px;
+            @include tablet{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            @include mobile{
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }   
                                    
             .animate__animated {
                 height: 400px;
@@ -208,8 +305,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
-                
+                @include tablet{
+                    width: 80%;
+                    height: auto;
+                }
+                @include mobile{
+                    width: 80%;
+                }   
+                              
                 img {
                     max-width: 100%;
                     height: auto;                    

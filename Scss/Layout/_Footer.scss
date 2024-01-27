@@ -1,4 +1,7 @@
 @import '../Utilities/mixin';
+@import '../Base/Media';
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,46 +15,80 @@ footer{
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    align-items: center;  
+
         ul{
-            padding: 10px 40px 10px 0px;
+            padding: 10px 40px 10px 50px;
             margin: 5px 100px 5px 100px;
             display: flex;
             justify-content: center;
             align-items: center;
+            @include tablet{
+                display: inline;  
+            }
+            @include mobile{
+                display: inline;   
+            }
                 #direccion{
-                    width: 1fr;
+                    width: 300px;
+                    align-items: center;
+                    justify-content: center;
                     ul{
-                        display: inline;
+                        display: inline-flex;
                         margin: 5px;
-                        li{                        
+                        justify-content: center;
+                        li{ 
+                            display: inline;
+                            justify-content: center; 
+                                                
                             img{
                                 width: 100px;
                                 height: 35px;
                                 margin: 5px;
+                                justify-content: center;
                             }
                             p{
                                 width: 200px;
                                 margin: 2px 5px 2px 5px;
+                                @include fuente-links(medium, 'Poppins', normal, #272727, normal);
+                                @include mobile{
+                                    @include fuente-links(xx-small, 'Poppins', normal, #272727, normal);
+                                }
+                                @include tablet{
+                                    @include fuente-links(x-small, 'Poppins', normal, #272727, normal);
+                                }
                             }
                         } 
                     }
                     
                 }
                 #suscripcion{
-                    width: 1fr;
+                    width: 300px;
+                    margin-left: 50px;
+                    margin-right: 50px;
                     ul{
                         li{
                             width: 200px;
-                            margin-bottom: 5px
+                            margin-bottom: 5px;
+                            .campo{
+                                @include fuente-links(small, 'Poppins', 100, #272727, normal);
+                                @include mobile{
+                                    width: 100px;
+                                }
+                                @include mobile{
+                                    width: 200px;
+                                }
+                            }
                         }
                     }
                 }
                 #Redes{
-                    width:1fr;
+                    width:300px;
                     margin-bottom: 5px;
                     display: flex;
                     justify-content: center;
                     text-decoration: none;
+                    margin-left: 35px;
                     #socialmedia{
                         margin-bottom: 5px;
                         display: inline;
